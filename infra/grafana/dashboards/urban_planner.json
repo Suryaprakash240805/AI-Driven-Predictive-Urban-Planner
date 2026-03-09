@@ -1,0 +1,61 @@
+{
+    "title": "Urban Planner – System Dashboard",
+    "uid": "urban-planner-main",
+    "panels": [
+        {
+            "title": "API Request Rate",
+            "type": "timeseries",
+            "targets": [
+                {
+                    "expr": "rate(http_requests_total{job='backend'}[1m])",
+                    "legendFormat": "Requests/sec"
+                }
+            ]
+        },
+        {
+            "title": "ML Layout Generation Latency",
+            "type": "timeseries",
+            "targets": [
+                {
+                    "expr": "histogram_quantile(0.95, rate(http_request_duration_seconds_bucket{job='ml-service'}[5m]))",
+                    "legendFormat": "p95 latency"
+                }
+            ]
+        },
+        {
+            "title": "Active WebSocket Connections",
+            "type": "stat",
+            "targets": [
+                {
+                    "expr": "websocket_active_connections_total",
+                    "legendFormat": "WS Connections"
+                }
+            ]
+        },
+        {
+            "title": "Project Status Distribution",
+            "type": "piechart",
+            "targets": [
+                {
+                    "expr": "project_status_count",
+                    "legendFormat": "{{status}}"
+                }
+            ]
+        },
+        {
+            "title": "Validator Queue Depth",
+            "type": "gauge",
+            "targets": [
+                {
+                    "expr": "validator_queue_depth",
+                    "legendFormat": "Pending Reviews"
+                }
+            ]
+        }
+    ],
+    "time": {
+        "from": "now-24h",
+        "to": "now"
+    },
+    "refresh": "30s"
+}

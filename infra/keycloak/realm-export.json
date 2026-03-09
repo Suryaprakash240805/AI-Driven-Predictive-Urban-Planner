@@ -1,0 +1,108 @@
+{
+    "realm": "urban-planner",
+    "enabled": true,
+    "displayName": "Urban Planner",
+    "displayNameHtml": "<span style='color:#D4AF37'>Urban Planner</span>",
+    "registrationAllowed": true,
+    "loginWithEmailAllowed": true,
+    "duplicateEmailsAllowed": false,
+    "sslRequired": "none",
+    "clients": [
+        {
+            "clientId": "urban-planner-frontend",
+            "enabled": true,
+            "publicClient": true,
+            "redirectUris": [
+                "http://localhost:3000/*"
+            ],
+            "webOrigins": [
+                "http://localhost:3000"
+            ],
+            "standardFlowEnabled": true,
+            "directAccessGrantsEnabled": true,
+            "protocol": "openid-connect"
+        }
+    ],
+    "roles": {
+        "realm": [
+            {
+                "name": "citizen",
+                "description": "Land planning citizen"
+            },
+            {
+                "name": "validator_1",
+                "description": "Land & input verifier"
+            },
+            {
+                "name": "validator_2",
+                "description": "Construction feasibility reviewer"
+            },
+            {
+                "name": "validator_3",
+                "description": "Final expert reviewer"
+            }
+        ]
+    },
+    "users": [
+        {
+            "username": "citizen1",
+            "email": "citizen1@urbanplanner.in",
+            "enabled": true,
+            "credentials": [
+                {
+                    "type": "password",
+                    "value": "citizen123",
+                    "temporary": false
+                }
+            ],
+            "realmRoles": [
+                "citizen"
+            ]
+        },
+        {
+            "username": "validator1",
+            "email": "validator1@urbanplanner.in",
+            "enabled": true,
+            "credentials": [
+                {
+                    "type": "password",
+                    "value": "valid123",
+                    "temporary": false
+                }
+            ],
+            "realmRoles": [
+                "validator_1"
+            ]
+        },
+        {
+            "username": "validator2",
+            "email": "validator2@urbanplanner.in",
+            "enabled": true,
+            "credentials": [
+                {
+                    "type": "password",
+                    "value": "valid123",
+                    "temporary": false
+                }
+            ],
+            "realmRoles": [
+                "validator_2"
+            ]
+        },
+        {
+            "username": "validator3",
+            "email": "validator3@urbanplanner.in",
+            "enabled": true,
+            "credentials": [
+                {
+                    "type": "password",
+                    "value": "valid123",
+                    "temporary": false
+                }
+            ],
+            "realmRoles": [
+                "validator_3"
+            ]
+        }
+    ]
+}
