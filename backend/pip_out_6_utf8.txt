@@ -1,0 +1,200 @@
+﻿Collecting fastapi==0.110.0 (from -r requirements.txt (line 2))
+  Using cached fastapi-0.110.0-py3-none-any.whl.metadata (25 kB)
+Collecting uvicorn==0.29.0 (from uvicorn[standard]==0.29.0->-r requirements.txt (line 3))
+  Using cached uvicorn-0.29.0-py3-none-any.whl.metadata (6.3 kB)
+Collecting pydantic==2.6.4 (from -r requirements.txt (line 4))
+  Using cached pydantic-2.6.4-py3-none-any.whl.metadata (85 kB)
+Collecting pydantic-settings==2.2.1 (from -r requirements.txt (line 5))
+  Using cached pydantic_settings-2.2.1-py3-none-any.whl.metadata (3.1 kB)
+Collecting sqlalchemy==2.0.29 (from -r requirements.txt (line 8))
+  Using cached SQLAlchemy-2.0.29-py3-none-any.whl.metadata (9.6 kB)
+Collecting alembic==1.13.1 (from -r requirements.txt (line 9))
+  Using cached alembic-1.13.1-py3-none-any.whl.metadata (7.4 kB)
+Collecting asyncpg>=0.29.0 (from -r requirements.txt (line 10))
+  Using cached asyncpg-0.31.0-cp314-cp314-win_amd64.whl.metadata (4.5 kB)
+Collecting geoalchemy2==0.14.6 (from -r requirements.txt (line 11))
+  Using cached GeoAlchemy2-0.14.6-py3-none-any.whl.metadata (2.0 kB)
+Collecting motor==3.3.2 (from -r requirements.txt (line 12))
+  Using cached motor-3.3.2-py3-none-any.whl.metadata (20 kB)
+Collecting redis==5.0.3 (from -r requirements.txt (line 15))
+  Using cached redis-5.0.3-py3-none-any.whl.metadata (9.3 kB)
+Collecting celery==5.3.6 (from -r requirements.txt (line 16))
+  Using cached celery-5.3.6-py3-none-any.whl.metadata (21 kB)
+Collecting python-jose==3.3.0 (from python-jose[cryptography]==3.3.0->-r requirements.txt (line 19))
+  Using cached python_jose-3.3.0-py2.py3-none-any.whl.metadata (5.4 kB)
+Collecting passlib==1.7.4 (from passlib[bcrypt]==1.7.4->-r requirements.txt (line 20))
+  Using cached passlib-1.7.4-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting python-multipart==0.0.9 (from -r requirements.txt (line 21))
+  Using cached python_multipart-0.0.9-py3-none-any.whl.metadata (2.5 kB)
+Collecting httpx==0.27.0 (from -r requirements.txt (line 24))
+  Using cached httpx-0.27.0-py3-none-any.whl.metadata (7.2 kB)
+Collecting websockets>=12.0 (from -r requirements.txt (line 25))
+  Using cached websockets-16.0-cp314-cp314-win_amd64.whl.metadata (7.0 kB)
+Collecting earthengine-api==0.1.393 (from -r requirements.txt (line 28))
+  Using cached earthengine_api-0.1.393-py3-none-any.whl.metadata (1.7 kB)
+Collecting geopandas>=0.14.3 (from -r requirements.txt (line 29))
+  Using cached geopandas-1.1.2-py3-none-any.whl.metadata (2.3 kB)
+Requirement already satisfied: shapely>=2.0.3 in c:\users\suriya prakash\desktop\ai driven urban planner (dp-2)\urban-planner\venv\lib\site-packages (from -r requirements.txt (line 30)) (2.1.2)
+Collecting rasterio>=1.3.9 (from -r requirements.txt (line 31))
+  Using cached rasterio-1.5.0-cp314-cp314-win_amd64.whl.metadata (8.9 kB)
+Collecting pyproj>=3.6.1 (from -r requirements.txt (line 32))
+  Using cached pyproj-3.7.2-cp314-cp314-win_amd64.whl.metadata (31 kB)
+Collecting reportlab==4.1.0 (from -r requirements.txt (line 35))
+  Using cached reportlab-4.1.0-py3-none-any.whl.metadata (1.4 kB)
+Collecting Pillow==10.2.0 (from -r requirements.txt (line 36))
+  Using cached pillow-10.2.0.tar.gz (46.2 MB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'error'
+..\venv\Scripts\pip :  
+ error: subprocess-exit
+ed-with-error
+At line:1 char:1
++ ..\venv\Scripts\pip 
+install -r 
+requirements.txt > 
+pip_out_6.txt 2>&1; ...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (  error: subp   
+ rocess-exited-with    
+-error:String) [],     
+RemoteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+  
+  Getting requirements 
+to build wheel did not 
+run successfully.
+  exit code: 1
+  
+  [21 lines of output]
+  Traceback (most 
+recent call last):
+    File 
+"C:\Users\Suriya 
+Prakash\Desktop\AI 
+Driven Urban Planner (D
+P-2)\urban-planner\venv
+\Lib\site-packages\pip\
+_vendor\pyproject_hooks
+\_in_process\_in_proces
+s.py", line 389, in 
+<module>
+      main()
+      ~~~~^^
+    File 
+"C:\Users\Suriya 
+Prakash\Desktop\AI 
+Driven Urban Planner (D
+P-2)\urban-planner\venv
+\Lib\site-packages\pip\
+_vendor\pyproject_hooks
+\_in_process\_in_proces
+s.py", line 373, in 
+main
+      
+json_out["return_val"] 
+= hook(**hook_input["kw
+args"])
+                       
+        ~~~~^^^^^^^^^^^
+^^^^^^^^^^^^^
+    File 
+"C:\Users\Suriya 
+Prakash\Desktop\AI 
+Driven Urban Planner (D
+P-2)\urban-planner\venv
+\Lib\site-packages\pip\
+_vendor\pyproject_hooks
+\_in_process\_in_proces
+s.py", line 143, in get
+_requires_for_build_whe
+el
+      return 
+hook(config_settings)
+    File 
+"C:\Users\Suriya Prakas
+h\AppData\Local\Temp\pi
+p-build-env-p98oi4lc\ov
+erlay\Lib\site-packages
+\setuptools\build_meta.
+py", line 333, in get_r
+equires_for_build_wheel
+      return self._get_
+build_requires(config_s
+ettings, 
+requirements=[])
+             ~~~~~~~~~~
+~~~~~~~~~~~~~~^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^
+^^
+    File 
+"C:\Users\Suriya Prakas
+h\AppData\Local\Temp\pi
+p-build-env-p98oi4lc\ov
+erlay\Lib\site-packages
+\setuptools\build_meta.
+py", line 301, in 
+_get_build_requires
+      self.run_setup()
+      ~~~~~~~~~~~~~~^^
+    File 
+"C:\Users\Suriya Prakas
+h\AppData\Local\Temp\pi
+p-build-env-p98oi4lc\ov
+erlay\Lib\site-packages
+\setuptools\build_meta.
+py", line 317, in 
+run_setup
+      exec(code, 
+locals())
+      
+~~~~^^^^^^^^^^^^^^^^
+    File "<string>", 
+line 31, in <module>
+    File "<string>", 
+line 28, in get_version
+  KeyError: 
+'__version__'
+  [end of output]
+  
+  note: This error 
+originates from a 
+subprocess, and is 
+likely not a problem 
+with pip.
+
+[notice] A new release 
+of pip is available: 
+25.2 -> 26.0.1
+[notice] To update, 
+run: C:\Users\Suriya 
+Prakash\Desktop\AI 
+Driven Urban Planner (D
+P-2)\urban-planner\venv
+\Scripts\python.exe -m 
+pip install --upgrade 
+pip
+error: subprocess-exite
+d-with-error
+
+Getting requirements 
+to build wheel did not 
+run successfully.
+exit code: 1
+
+See above for output.
+
+note: This error 
+originates from a 
+subprocess, and is 
+likely not a problem 
+with pip.

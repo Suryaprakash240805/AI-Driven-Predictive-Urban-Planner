@@ -1,0 +1,180 @@
+﻿Collecting fastapi==0.110.0 (from -r requirements.txt (line 1))
+  Using cached fastapi-0.110.0-py3-none-any.whl.metadata (25 kB)
+Collecting uvicorn==0.29.0 (from uvicorn[standard]==0.29.0->-r requirements.txt (line 2))
+  Using cached uvicorn-0.29.0-py3-none-any.whl.metadata (6.3 kB)
+Collecting pydantic==2.6.4 (from -r requirements.txt (line 3))
+  Using cached pydantic-2.6.4-py3-none-any.whl.metadata (85 kB)
+Collecting pydantic-settings==2.2.1 (from -r requirements.txt (line 4))
+  Using cached pydantic_settings-2.2.1-py3-none-any.whl.metadata (3.1 kB)
+Collecting sqlalchemy==2.0.29 (from -r requirements.txt (line 5))
+  Using cached SQLAlchemy-2.0.29-py3-none-any.whl.metadata (9.6 kB)
+Collecting alembic==1.13.1 (from -r requirements.txt (line 6))
+  Using cached alembic-1.13.1-py3-none-any.whl.metadata (7.4 kB)
+Collecting asyncpg==0.29.0 (from -r requirements.txt (line 7))
+  Using cached asyncpg-0.29.0.tar.gz (820 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting psycopg2-binary==2.9.9 (from -r requirements.txt (line 8))
+  Using cached psycopg2-binary-2.9.9.tar.gz (384 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'error'
+..\venv\Scripts\pip :  
+ error: subprocess-exit
+ed-with-error
+At line:1 char:1
++ ..\venv\Scripts\pip 
+install -r 
+requirements.txt > 
+pip_out.txt 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (  error: subp   
+ rocess-exited-with    
+-error:String) [],     
+RemoteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+  
+  Getting requirements 
+to build wheel did not 
+run successfully.
+  exit code: 1
+  
+  [34 lines of output]
+  C:\Users\Suriya Praka
+sh\AppData\Local\Temp\p
+ip-build-env-dzgywiot\o
+verlay\Lib\site-package
+s\setuptools\dist.py:76
+5: SetuptoolsDeprecatio
+nWarning: License 
+classifiers are 
+deprecated.
+  !!
+  
+          *************
+***********************
+***********************
+*********************
+          Please 
+consider removing the 
+following classifiers 
+in favor of a SPDX 
+license expression:
+  
+          License :: 
+OSI Approved :: GNU 
+Library or Lesser 
+General Public License 
+(LGPL)
+  
+          See https://p
+ackaging.python.org/en/
+latest/guides/writing-p
+yproject-toml/#license 
+for details.
+          *************
+***********************
+***********************
+*********************
+  
+  !!
+    self._finalize_lice
+nse_expression()
+  running egg_info
+  writing psycopg2_bina
+ry.egg-info\PKG-INFO
+  writing 
+dependency_links to psy
+copg2_binary.egg-info\d
+ependency_links.txt
+  writing top-level 
+names to psycopg2_binar
+y.egg-info\top_level.tx
+t
+  
+  Error: pg_config 
+executable not found.
+  
+  pg_config is 
+required to build 
+psycopg2 from source.  
+Please add the 
+directory
+  containing pg_config 
+to the $PATH or 
+specify the full 
+executable path with 
+the
+  option:
+  
+      python setup.py 
+build_ext --pg-config 
+/path/to/pg_config 
+build ...
+  
+  or with the 
+pg_config option in 
+'setup.cfg'.
+  
+  If you prefer to 
+avoid building 
+psycopg2 from source, 
+please install the PyPI
+  'psycopg2-binary' 
+package instead.
+  
+  For further 
+information please 
+check the 
+'doc/src/install.rst' 
+file (also at
+  <https://www.psycopg.
+org/docs/install.html>)
+.
+  
+  [end of output]
+  
+  note: This error 
+originates from a 
+subprocess, and is 
+likely not a problem 
+with pip.
+
+[notice] A new release 
+of pip is available: 
+25.2 -> 26.0.1
+[notice] To update, 
+run: C:\Users\Suriya 
+Prakash\Desktop\AI 
+Driven Urban Planner (D
+P-2)\urban-planner\venv
+\Scripts\python.exe -m 
+pip install --upgrade 
+pip
+error: subprocess-exite
+d-with-error
+
+Getting requirements 
+to build wheel did not 
+run successfully.
+exit code: 1
+
+See above for output.
+
+note: This error 
+originates from a 
+subprocess, and is 
+likely not a problem 
+with pip.

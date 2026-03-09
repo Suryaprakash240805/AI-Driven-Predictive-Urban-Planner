@@ -1,0 +1,5 @@
+.\.env
+.\app\services\geo_service.py
+.\tests\test_geo_service.py
+.\tests\test_projects.py
+.\tests\test_validators.py
